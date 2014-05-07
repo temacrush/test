@@ -1,0 +1,6 @@
+AddDefaultCharset utf-8
+RewriteEngine On 
+RewriteRule     ^$    /index.php?action=topics_list&page=1
+RewriteRule     ^page\/(.*)\/$    /index.php?action=topics_list&page=$1
+RewriteRule     ^topic\/(.*)\/$    /index.php?action=topic_page&id=$1
+RewriteRule     ^edit\/(.*)\/$    /index.php?action=topic_edit&id=$1
